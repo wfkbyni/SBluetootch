@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TwoController">
+            <connections>
+                <outlet property="friendBtn" destination="rfd-Dx-eHh" id="HlS-a9-l1y"/>
+                <outlet property="onlineBtn" destination="hJ8-Xl-C3c" id="Dsm-02-2pa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJ8-Xl-C3c">
+                    <rect key="frame" x="70" y="84" width="180" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="LnY-vL-7nK"/>
+                        <constraint firstAttribute="width" constant="180" id="wpg-Gq-59G"/>
+                    </constraints>
+                    <state key="normal" title="挂起"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfd-Dx-eHh">
+                    <rect key="frame" x="70" y="156" width="180" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="14K-GO-epS"/>
+                        <constraint firstAttribute="height" constant="40" id="tUV-dt-cGJ"/>
+                    </constraints>
+                    <state key="normal" title="好友"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hJ8-Xl-C3c" secondAttribute="trailing" constant="70" id="8Gu-e2-vnv"/>
+                <constraint firstItem="rfd-Dx-eHh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="70" id="8zd-FN-m3x"/>
+                <constraint firstAttribute="trailing" secondItem="rfd-Dx-eHh" secondAttribute="trailing" constant="70" id="One-ZC-8St"/>
+                <constraint firstItem="hJ8-Xl-C3c" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="70" id="ivg-px-uo6"/>
+                <constraint firstItem="rfd-Dx-eHh" firstAttribute="top" secondItem="hJ8-Xl-C3c" secondAttribute="bottom" constant="30" id="mT2-Rn-p3b"/>
+                <constraint firstItem="hJ8-Xl-C3c" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="yqg-2j-FFk"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <point key="canvasLocation" x="293" y="303"/>
+        </view>
+    </objects>
+</document>

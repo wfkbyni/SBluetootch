@@ -1,0 +1,112 @@
+//
+//  PrefixHeader.pch
+//  SBluetoothReceive
+//
+//  Created by 舒永超 on 15/10/18.
+//  Copyright © 2015年 sych. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#include <objc/runtime.h>
+
+#import "ReactiveCocoa.h"
+
+#import <CoreBluetooth/CoreBluetooth.h>
+
+#import "SVProgressHUD.h"
+#import "BaseController.h"
+
+// babybluetooth
+#import "BabyBluetooth.h"
+#import "BabyCallback.h"
+#import "BabyOptions.h"
+#import "BabyRhythm.h"
+#import "Babysister.h"
+#import "BabySpeaker.h"
+#import "BabyToy.h"
+// babybluetooth
+
+#import "JSONModel.h"
+
+#import "ACEDrawingView.h"
+
+#import "YYKit.h"
+
+#import "UIAlertViewExtension.h"
+#import "FCFileManager.h"
+
+#import "AFNetworking.h"
+
+#import "JGProgressHUD.h"
+#import "JGProgressHUDExtension.h"
+
+#import "CustomNavigationController.h"
+#import "CYLTabBarController.h"
+
+#import "HttpClientHelper.h"
+#import "RequestMethod.h"
+#import "PublicMethod.h"
+
+// Model
+#import "UserMessage.h"
+#import "FriendsModel.h"
+// Model
+
+#import "CocoaAsyncSocket.h"
+#import "SocketCommandEnum.h"
+#import "SocketPacketModel.h"
+#import "SocketErrorCommandEnum.h"
+
+#import "RequestStaticMethod.h"
+
+#import "UIView+SDAutoLayout.h"
+#import "UITableView+SDAutoTableViewCellHeight.h"
+
+#import "UIButton+CornerRadiusBtn.h"
+
+// 环信相关
+#import "EaseMob.h"
+#import "EaseUI.h"
+
+#import "MyConst.h"
+
+
+#endif /* PrefixHeader_pch */
+
+// 环信appkey
+#define EaseMobAppKey @"rwx#sbluetoothreceive"
+
+#define DebugLog(fmt, ...) NSLog((@"%s [Line %d] " "-\n-=-=-=-=-=-=-=-=-=-=-\n" fmt "\n-=-=-=-=-=-=-=-=-=-=-\n "), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+
+// 登录用户信息
+#define LOGINUSERMESSAGE @"LoginUserMessage"
+
+#define ScreenSize [[UIApplication sharedApplication].windows.firstObject bounds].size
+
+#define maincolor [UIColor colorWithRed:247.0f / 255.0f green:16.0f / 255.0f blue:129.0f/ 255.0f alpha:1]
+
+#define IS_IPHONE_5 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
+
+#define serverurl @"115.159.18.87"
+
+// 订阅蓝牙的UUID
+#define NotifyUUID @"FFE0"  // FFF0
+// 收数据蓝牙的UUID
+#define WriteDateUUID @"FFE1"   // FFF2
+
+// 聊天的接收者
+#define ChatRecipient @"ChatRecipient"
+// 聊天的接收者ID
+#define ChatRecipientID @"ChatRecipientID"
+
+// 请求退出次数
+#define RequestQuitCount @"RequestQuitCount"
+// 是否联机中
+#define IsConnectioning @"isConnectioning"
+
+#define appDelegate ((AppDelegate *)[[UIApplication sharedApplication] delegate])
