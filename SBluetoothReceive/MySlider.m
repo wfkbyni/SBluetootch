@@ -24,17 +24,17 @@
             float value = afterValue / 1000;
             [NSThread sleepForTimeInterval:value];
             
-            NSString *str = @"DD0000";
+            NSString *str = @"D00000";
             if (intValue < 10) {
-                str = [NSString stringWithFormat:@"DD00000%d",intValue];
+                str = [NSString stringWithFormat:@"D0000%d",intValue];
             }else if(intValue < 100){
-                str = [NSString stringWithFormat:@"DD0000%d",intValue];
+                str = [NSString stringWithFormat:@"D000%d",intValue];
             }else if(intValue < 1000){
-                str = [NSString stringWithFormat:@"DD000%d",intValue];
+                str = [NSString stringWithFormat:@"D00%d",intValue];
             }else if(intValue < 10000){
-                str = [NSString stringWithFormat:@"DD00%d",intValue];
+                str = [NSString stringWithFormat:@"D0%d",intValue];
             }else{
-                str = [NSString stringWithFormat:@"DD0%d",intValue];
+                str = [NSString stringWithFormat:@"D%d",intValue];
             }
             
             _changeValue = str;

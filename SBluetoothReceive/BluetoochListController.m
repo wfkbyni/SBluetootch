@@ -263,6 +263,10 @@
         value = [value stringByReplacingOccurrencesOfString:@"<" withString:@""];
         value = [value stringByReplacingOccurrencesOfString:@">" withString:@""];
         
+        if ([value isEqualToString:@"dd000000"] || [value isEqualToString:@"dd000000 dd000000"]) {
+            return ;
+        }
+        
         // 温度值
         [[NSNotificationCenter defaultCenter] postNotificationName:TemperatureValue object:value];
         

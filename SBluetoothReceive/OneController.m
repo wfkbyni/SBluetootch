@@ -17,6 +17,7 @@
 #import "OperationTableViewController.h"
 
 #import "MySlider.h"
+#import "SBMachineConnectBusiness.h"
 
 #define dateformat @"yyyy-MM-dd hh:mm:ss.SSSZ"
 
@@ -48,6 +49,14 @@
     [self viewWithStyle];
     
     [appDelegate connectionSocketAndSendData:SocketCommandConnect receiveUserId:nil data:nil];
+    
+//    SBMachineConnectBusiness *business = [[SBMachineConnectBusiness alloc] init];
+//    UserMessage *userMessage = [PublicMethod getReceiveUserMessage];
+//    while (YES) {
+//        [NSThread sleepForTimeInterval:0.05];
+//        
+//        [business sendData:@"dd0000" receiveUserId:userMessage.AccountId];
+//    }
     
     self.title = @"单人";
     

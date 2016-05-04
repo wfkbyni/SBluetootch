@@ -64,7 +64,10 @@
             break;
         case SocketCommandMachineConnecting://接收方收到此命令就可以直接发送给电机，让电机动起来
         {
-            [bufferArray addObject:model.data];
+            //[bufferArray addObject:model.data];
+            
+            BluetoothHelper *helper = [BluetoothHelper shareBluetoothHelper];
+            [helper writeDataToDevice:model.data];
             
         }
             break;
@@ -108,7 +111,7 @@
 - (void)getChangeValue{
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(50 * NSEC_PER_MSEC)), dispatch_get_main_queue(), ^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(20 * NSEC_PER_MSEC)), dispatch_get_main_queue(), ^{
             
             if (bufferArray != nil && bufferArray.count > 0) {
                 NSLog(@"changeValue %@",bufferArray);

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MainViewController.h"
 
-#define SocketType 1//0:udp 1:tcp
+#define SocketType 0//0:udp 1:tcp
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate,
 #if SocketType

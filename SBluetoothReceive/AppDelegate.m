@@ -189,7 +189,7 @@ didFinishLaunchingWithOptions:launchOptions
 - (void)udpSocket:(GCDAsyncUdpSocket *)sock
    didReceiveData:(NSData *)data
       fromAddress:(NSData *)address withFilterContext:(id)filterContext{
-    UdpPacketModel *model = [[UdpPacketModel alloc] initWithData:data];
+    SocketPacketModel *model = [[SocketPacketModel alloc] initWithData:data];
     [_bll executeWithModel:model];
 }
 
