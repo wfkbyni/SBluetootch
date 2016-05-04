@@ -232,10 +232,18 @@
     [acedrawingView setSendControlValue:^(NSString *value) {
         if ([value isEqualToString:@"BB01"]) {
             [[NSNotificationCenter defaultCenter] addObserver:weakSelf selector:@selector(updateTemperatureValue:) name:TemperatureValue object:nil];
+        }else if([value isEqualToString:@"BC01"]){
+        
+        }else if([value isEqualToString:@"BC02"]){
+            
+        }else if([value isEqualToString:@"BC03"]){
+            
         }else{
             [[NSNotificationCenter defaultCenter] removeObserver:weakSelf name:TemperatureValue object:nil];
         }
         [weakSelf.bluetoothHelper writeDataToDevice:value];
+        
+        [SVProgressHUD showSuccessWithStatus:[NSString stringWithFormat:@"%@值已发送",value]];
     }];
     
     self.sliderView.frame = acedrawingView.frame;
