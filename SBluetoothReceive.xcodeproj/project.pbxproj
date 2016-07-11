@@ -420,6 +420,9 @@
 		9A9F63C81D33C36F00B03406 /* a.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9A9F63C51D33C36F00B03406 /* a.wav */; };
 		9A9F63C91D33C36F00B03406 /* b.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9A9F63C61D33C36F00B03406 /* b.wav */; };
 		9A9F63CA1D33C36F00B03406 /* c.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9A9F63C71D33C36F00B03406 /* c.wav */; };
+		9A9F63CE1D33D76000B03406 /* c.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9A9F63CB1D33D76000B03406 /* c.mp3 */; };
+		9A9F63CF1D33D76000B03406 /* b.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9A9F63CC1D33D76000B03406 /* b.mp3 */; };
+		9A9F63D01D33D76000B03406 /* a.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9A9F63CD1D33D76000B03406 /* a.mp3 */; };
 		9AAFD0991C3D4D8200E572D0 /* ConversationListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAFD0981C3D4D8200E572D0 /* ConversationListController.m */; };
 		9AAFD0A51C3D4EA000E572D0 /* EMRobotChatTextBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAFD09C1C3D4EA000E572D0 /* EMRobotChatTextBubbleView.m */; };
 		9AAFD0A61C3D4EA000E572D0 /* EMRotbotChatViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAFD09E1C3D4EA000E572D0 /* EMRotbotChatViewCell.m */; };
@@ -1090,6 +1093,9 @@
 		9A9F63C51D33C36F00B03406 /* a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = a.wav; sourceTree = "<group>"; };
 		9A9F63C61D33C36F00B03406 /* b.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = b.wav; sourceTree = "<group>"; };
 		9A9F63C71D33C36F00B03406 /* c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = c.wav; sourceTree = "<group>"; };
+		9A9F63CB1D33D76000B03406 /* c.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = c.mp3; sourceTree = "<group>"; };
+		9A9F63CC1D33D76000B03406 /* b.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = b.mp3; sourceTree = "<group>"; };
+		9A9F63CD1D33D76000B03406 /* a.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = a.mp3; sourceTree = "<group>"; };
 		9AAFD0971C3D4D8200E572D0 /* ConversationListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationListController.h; sourceTree = "<group>"; };
 		9AAFD0981C3D4D8200E572D0 /* ConversationListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationListController.m; sourceTree = "<group>"; };
 		9AAFD09B1C3D4EA000E572D0 /* EMRobotChatTextBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMRobotChatTextBubbleView.h; sourceTree = "<group>"; };
@@ -2497,6 +2503,9 @@
 		9A9F63C41D33C36F00B03406 /* music */ = {
 			isa = PBXGroup;
 			children = (
+				9A9F63CB1D33D76000B03406 /* c.mp3 */,
+				9A9F63CC1D33D76000B03406 /* b.mp3 */,
+				9A9F63CD1D33D76000B03406 /* a.mp3 */,
 				9A9F63C51D33C36F00B03406 /* a.wav */,
 				9A9F63C61D33C36F00B03406 /* b.wav */,
 				9A9F63C71D33C36F00B03406 /* c.wav */,
@@ -2751,6 +2760,7 @@
 				044C3A301C39FE8200E99F0B /* icon_password@2x.png in Resources */,
 				9A2FE1851C54BC5B00B81B28 /* link@1x.png in Resources */,
 				040C09231C3CF67800349FA4 /* cachewithstart_on@2x.png in Resources */,
+				9A9F63CF1D33D76000B03406 /* b.mp3 in Resources */,
 				040C09111C3CEF9900349FA4 /* LaunchImage-800-Landscape-736h@3x.png in Resources */,
 				9A2FE18D1C54BE1600B81B28 /* AboutController.xib in Resources */,
 				04C762B81C0EC766008CEEAE /* UpdateInfoController.xib in Resources */,
@@ -2815,6 +2825,7 @@
 				9A2FE1371C51BEB900B81B28 /* open_cache_off@3x.png in Resources */,
 				9A2FE1411C51C0F000B81B28 /* online_off@1x.png in Resources */,
 				044C3A441C3A130F00E99F0B /* icon_square_on@2x.png in Resources */,
+				9A9F63CE1D33D76000B03406 /* c.mp3 in Resources */,
 				041088F11C2A40AC00B678F9 /* chatBar_recordSelectedBg@2x.png in Resources */,
 				0496964C1C0FCC4800E37212 /* FriendsListController.xib in Resources */,
 				9A2FE12E1C51BE1100B81B28 /* online_request_on@3x.png in Resources */,
@@ -2840,6 +2851,7 @@
 				04C7628A1C0E9116008CEEAE /* Icon.png in Resources */,
 				041089071C2A40AC00B678F9 /* VoiceSearchFeedback016@2x.png in Resources */,
 				9A2FE1731C54B34D00B81B28 /* girl_off@2x.png in Resources */,
+				9A9F63D01D33D76000B03406 /* a.mp3 in Resources */,
 				041088EB1C2A40AC00B678F9 /* chatBar_keyboardSelected@2x.png in Resources */,
 				9A2FE1661C54B34D00B81B28 /* about@3x.png in Resources */,
 				04C7627E1C0E9116008CEEAE /* Icon-40@3x.png in Resources */,

@@ -267,8 +267,17 @@
             return ;
         }
         
-        if ([value hasPrefix:@"ff"]) {
+        if ([[value lowercaseString] hasPrefix:@"ff"] && value.length == 4) {
+            NSString *speed = [value substringWithRange:NSMakeRange(2, 1)]; // 速度
+            NSString *depth = [value substringWithRange:NSMakeRange(3, 1)]; // 深度
             
+            if ([depth isEqualToString:@"a"]) {
+                [AudioTool playSound:@"c.mp3"];
+            }else if ([depth isEqualToString:@"b"]) {
+                [AudioTool playSound:@"b.mp3"];
+            }else if ([depth isEqualToString:@"c"] || [depth isEqualToString:@"d"]) {
+                [AudioTool playSound:@"c.mp3"];
+            }
             return;
         }
         
