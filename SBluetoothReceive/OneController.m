@@ -78,6 +78,8 @@
         
         if (_bluetoothHelper.isStartCacheData) {
             
+            [[NSUserDefaults standardUserDefaults] setObject:@"EndCache" forKey:@"ShakeDataCache"];
+            
             if (_bluetoothHelper.cacheDatas.count == 0) {
                 
                 _bluetoothHelper.isStartCacheData = NO;
@@ -93,6 +95,9 @@
             [self.cacheBtn setImage:[UIImage imageNamed:@"cachewithstart_off"] forState:UIControlStateNormal];
             [self.cacheBtn setImage:[UIImage imageNamed:@"cachewithstart_on"] forState:UIControlStateHighlighted];
         }else{
+            
+            [[NSUserDefaults standardUserDefaults] setObject:@"StartCache" forKey:@"ShakeDataCache"];
+            
             [_bluetoothHelper.cacheDatas removeAllObjects];
             
             [self.cacheBtn setImage:[UIImage imageNamed:@"cachewithend_off"] forState:UIControlStateNormal];

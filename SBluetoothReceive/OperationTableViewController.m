@@ -282,9 +282,10 @@
                         [self stopRuning];
                         break;
                     }else{
-                        [NSThread sleepForTimeInterval:0.05];
+                        NSInteger time = [[[NSUserDefaults standardUserDefaults] valueForKey:@"cache_value1"] intValue];
+                        CGFloat sleepTime = (CGFloat)time / 1000;
+                        [NSThread sleepForTimeInterval:sleepTime];
                         [bluetoothHelper writeDataToDevice:info.value];
-                        
                     }
                 }
                 if (!isSend) {

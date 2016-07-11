@@ -416,6 +416,10 @@
 		9A9140401C2C2B26003553A0 /* AppDelegate+EaseMob.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A91403F1C2C2B26003553A0 /* AppDelegate+EaseMob.m */; };
 		9A98384D1C19B49700DB887C /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A98384B1C19B49700DB887C /* SettingController.m */; };
 		9A98384E1C19B49700DB887C /* SettingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A98384C1C19B49700DB887C /* SettingController.xib */; };
+		9A9F63C31D33C31E00B03406 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9F63C21D33C31E00B03406 /* AVFoundation.framework */; };
+		9A9F63C81D33C36F00B03406 /* a.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9A9F63C51D33C36F00B03406 /* a.wav */; };
+		9A9F63C91D33C36F00B03406 /* b.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9A9F63C61D33C36F00B03406 /* b.wav */; };
+		9A9F63CA1D33C36F00B03406 /* c.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9A9F63C71D33C36F00B03406 /* c.wav */; };
 		9AAFD0991C3D4D8200E572D0 /* ConversationListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAFD0981C3D4D8200E572D0 /* ConversationListController.m */; };
 		9AAFD0A51C3D4EA000E572D0 /* EMRobotChatTextBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAFD09C1C3D4EA000E572D0 /* EMRobotChatTextBubbleView.m */; };
 		9AAFD0A61C3D4EA000E572D0 /* EMRotbotChatViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAFD09E1C3D4EA000E572D0 /* EMRotbotChatViewCell.m */; };
@@ -448,6 +452,7 @@
 		9AD8938E1C5B22AE00671E8C /* SBPlayTogetherBusiness.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8938D1C5B22AE00671E8C /* SBPlayTogetherBusiness.m */; };
 		9AD893911C5B268900671E8C /* SBServerBusiness.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD893901C5B268900671E8C /* SBServerBusiness.m */; };
 		9AD893941C5B28D100671E8C /* SBUdpBusiness_bak.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD893931C5B28D100671E8C /* SBUdpBusiness_bak.m */; };
+		9AFA22461D33C2A500B2D8F0 /* AudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA22451D33C2A500B2D8F0 /* AudioTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1081,6 +1086,10 @@
 		9A98384A1C19B49700DB887C /* SettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
 		9A98384B1C19B49700DB887C /* SettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
 		9A98384C1C19B49700DB887C /* SettingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingController.xib; sourceTree = "<group>"; };
+		9A9F63C21D33C31E00B03406 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9A9F63C51D33C36F00B03406 /* a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = a.wav; sourceTree = "<group>"; };
+		9A9F63C61D33C36F00B03406 /* b.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = b.wav; sourceTree = "<group>"; };
+		9A9F63C71D33C36F00B03406 /* c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = c.wav; sourceTree = "<group>"; };
 		9AAFD0971C3D4D8200E572D0 /* ConversationListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationListController.h; sourceTree = "<group>"; };
 		9AAFD0981C3D4D8200E572D0 /* ConversationListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationListController.m; sourceTree = "<group>"; };
 		9AAFD09B1C3D4EA000E572D0 /* EMRobotChatTextBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMRobotChatTextBubbleView.h; sourceTree = "<group>"; };
@@ -1138,6 +1147,8 @@
 		9AD893901C5B268900671E8C /* SBServerBusiness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBServerBusiness.m; sourceTree = "<group>"; };
 		9AD893921C5B28D100671E8C /* SBUdpBusiness_bak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBUdpBusiness_bak.h; sourceTree = "<group>"; };
 		9AD893931C5B28D100671E8C /* SBUdpBusiness_bak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBUdpBusiness_bak.m; sourceTree = "<group>"; };
+		9AFA22441D33C2A500B2D8F0 /* AudioTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioTool.h; sourceTree = "<group>"; };
+		9AFA22451D33C2A500B2D8F0 /* AudioTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioTool.m; sourceTree = "<group>"; };
 		A60B2DDED35A38E9DD6D83D5 /* Pods-SBluetoothReceive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBluetoothReceive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SBluetoothReceive/Pods-SBluetoothReceive.debug.xcconfig"; sourceTree = "<group>"; };
 		E6955D537A0CDC92F75AC0A0 /* Pods_SBluetoothReceive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SBluetoothReceive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -1147,6 +1158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A9F63C31D33C31E00B03406 /* AVFoundation.framework in Frameworks */,
 				9AAFD0ED1C3D533A00E572D0 /* Accounts.framework in Frameworks */,
 				9AD893841C5B0E9400671E8C /* libopencore-amrnb.a in Frameworks */,
 				9AAFD0EB1C3D532C00E572D0 /* Social.framework in Frameworks */,
@@ -1974,6 +1986,7 @@
 		047943251C20FB5C00EAE4E0 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				9AFA22431D33C2A500B2D8F0 /* AudioTool */,
 				9A24C3371CBFE8B800671233 /* const */,
 				9A2B88EA1C4D077000AB5743 /* SDAutoLayout */,
 				9AAFD0DF1C3D51D600E572D0 /* EaseMob3rdparty */,
@@ -2390,6 +2403,7 @@
 		9A725DD01BD3D2CA00C16811 /* Resourse */ = {
 			isa = PBXGroup;
 			children = (
+				9A9F63C41D33C36F00B03406 /* music */,
 				044C3A341C3A130F00E99F0B /* tabbarimage */,
 				044C3A2B1C39FE4500E99F0B /* image */,
 				04C762601C0E9116008CEEAE /* icon */,
@@ -2478,6 +2492,16 @@
 				9A2FE1791C54B43000B81B28 /* SettingCell.xib */,
 			);
 			name = SettingController;
+			sourceTree = "<group>";
+		};
+		9A9F63C41D33C36F00B03406 /* music */ = {
+			isa = PBXGroup;
+			children = (
+				9A9F63C51D33C36F00B03406 /* a.wav */,
+				9A9F63C61D33C36F00B03406 /* b.wav */,
+				9A9F63C71D33C36F00B03406 /* c.wav */,
+			);
+			path = music;
 			sourceTree = "<group>";
 		};
 		9AAFD09A1C3D4D8900E572D0 /* ConversationListController */ = {
@@ -2586,6 +2610,15 @@
 			path = Bussiness;
 			sourceTree = "<group>";
 		};
+		9AFA22431D33C2A500B2D8F0 /* AudioTool */ = {
+			isa = PBXGroup;
+			children = (
+				9AFA22441D33C2A500B2D8F0 /* AudioTool.h */,
+				9AFA22451D33C2A500B2D8F0 /* AudioTool.m */,
+			);
+			path = AudioTool;
+			sourceTree = "<group>";
+		};
 		EA0C71D777620060F8058939 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -2598,6 +2631,7 @@
 		ECB37FE8A3579639FACBFEF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9A9F63C21D33C31E00B03406 /* AVFoundation.framework */,
 				9AAFD0EC1C3D533A00E572D0 /* Accounts.framework */,
 				9AAFD0EA1C3D532C00E572D0 /* Social.framework */,
 				9A913DDA1C29A5A9003553A0 /* libc++.tbd */,
@@ -2724,6 +2758,7 @@
 				9A2FE17F1C54B6C100B81B28 /* shop@1x.png in Resources */,
 				041088EE1C2A40AC00B678F9 /* chatBar_record@2x.png in Resources */,
 				041088A91C2A40AC00B678F9 /* MWPhotoBrowser.bundle in Resources */,
+				9A9F63CA1D33C36F00B03406 /* c.wav in Resources */,
 				0416A4511C0E86B2006A64BC /* LoginController.xib in Resources */,
 				040C09541C3CFCCC00349FA4 /* cachewithend_off@2x.png in Resources */,
 				04C762851C0E9116008CEEAE /* Icon-Small-50.png in Resources */,
@@ -2758,6 +2793,7 @@
 				04C762841C0E9116008CEEAE /* Icon-76@2x.png in Resources */,
 				0496967E1C113CE800E37212 /* StrangerListController.xib in Resources */,
 				9A1528201C204C4F0011383F /* UserInfoController.xib in Resources */,
+				9A9F63C91D33C36F00B03406 /* b.wav in Resources */,
 				9A2FE1AA1C56544700B81B28 /* message@1x.png in Resources */,
 				9A2FE14D1C51C18D00B81B28 /* sign_out_off@1x.png in Resources */,
 				9AAFD0B61C3D4FC800E572D0 /* sr_refresh@2X.png in Resources */,
@@ -2886,6 +2922,7 @@
 				0410890B1C2A40AC00B678F9 /* VoiceSearchFeedback020@2x.png in Resources */,
 				9A2FE1201C51BD0E00B81B28 /* play_off@1x.png in Resources */,
 				9A2B88E91C4D05A600AB5743 /* OperationCell.xib in Resources */,
+				9A9F63C81D33C36F00B03406 /* a.wav in Resources */,
 				044C3A421C3A130F00E99F0B /* icon_solo_on@2x.png in Resources */,
 				9A2FE16C1C54B34D00B81B28 /* bluetooth_p@3x.png in Resources */,
 				9A2FE16A1C54B34D00B81B28 /* back@3x.png in Resources */,
@@ -3007,6 +3044,7 @@
 				04C3F8111BD48AF200349C64 /* BabyOptions.m in Sources */,
 				041088C71C2A40AC00B678F9 /* EaseBubbleView+Location.m in Sources */,
 				041088921C2A40AC00B678F9 /* EMSDWebImagePrefetcher.m in Sources */,
+				9AFA22461D33C2A500B2D8F0 /* AudioTool.m in Sources */,
 				9A9140401C2C2B26003553A0 /* AppDelegate+EaseMob.m in Sources */,
 				041088811C2A40AC00B678F9 /* UIScrollView+MJRefresh.m in Sources */,
 				041088721C2A40AC00B678F9 /* EMCDDeviceManagerBase.m in Sources */,

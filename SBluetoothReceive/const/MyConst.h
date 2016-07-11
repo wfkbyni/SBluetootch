@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 // 温度值
-extern NSString *const TemperatureValue;
+FOUNDATION_EXTERN NSString *const TemperatureValue;
 

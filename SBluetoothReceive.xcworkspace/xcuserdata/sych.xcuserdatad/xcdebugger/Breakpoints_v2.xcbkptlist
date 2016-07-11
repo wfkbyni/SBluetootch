@@ -266,11 +266,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SBluetoothReceive/OperationTableViewController.m"
-            timestampString = "477231831.045201"
+            timestampString = "484750222.913636"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "344"
-            endingLineNumber = "344"
+            startingLineNumber = "346"
+            endingLineNumber = "346"
             landmarkName = "-swipeableTableViewCell:didTriggerLeftUtilityButtonWithIndex:"
             landmarkType = "5">
          </BreakpointContent>
@@ -537,22 +537,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SBluetoothReceive/BluetoochListController.m"
-            timestampString = "483541779.446461"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "263"
-            endingLineNumber = "263"
-            landmarkName = "-babyWithDelegate"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "SBluetoothReceive/BluetoothHelper.m"
             timestampString = "482338635.889497"
             startingColumnNumber = "9223372036854775807"
@@ -602,11 +586,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SBluetoothReceive/OneController.m"
-            timestampString = "484062820.361937"
+            timestampString = "484749087.607831"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "259"
-            endingLineNumber = "259"
+            startingLineNumber = "264"
+            endingLineNumber = "264"
             landmarkName = "-updateTemperatureValue:"
             landmarkType = "5">
          </BreakpointContent>
@@ -614,16 +598,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SBluetoothReceive/BluetoochListController.m"
-            timestampString = "484062554.146267"
+            filePath = "SBluetoothReceive/MySlider.m"
+            timestampString = "484577778.08799"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "271"
-            endingLineNumber = "271"
-            landmarkName = "-babyWithDelegate"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "-init"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SBluetoothReceive/OneController.m"
+            timestampString = "484749087.607831"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

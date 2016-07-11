@@ -8,6 +8,12 @@
 
 #import "MySlider.h"
 
+@interface MySlider()
+
+@property (nonatomic, copy) NSString *beforeValue;  // 上次的值
+
+@end
+
 @implementation MySlider
 
 -(instancetype)init{
@@ -54,14 +60,28 @@
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(time * NSEC_PER_MSEC)), dispatch_get_main_queue(), ^{
             
             if (_changeValue != nil) {
-                NSLog(@"changeValue %@",self.changeValue);
+                NSLog(@"changeValue 1 %@",self.changeValue);
                 
                 if (_startSendSliderDrawData != nil) {
                     _startSendSliderDrawData(_changeValue);
                 }
                 
+                _beforeValue = _changeValue;
                 _changeValue = nil;
+            }else{
                 
+                if (_beforeValue != nil) {
+                    
+                    if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"ShakeDataCache"] isEqualToString:@"StartCache"]) {
+                        _beforeValue = @"ffffff";
+                        NSLog(@"changeValue 2 %@",_beforeValue);
+                        
+                        if (_startSendSliderDrawData != nil) {
+                            _startSendSliderDrawData(_beforeValue);
+                        }
+                    }
+                    
+                }
             }
             
             [self getChangeValue];
