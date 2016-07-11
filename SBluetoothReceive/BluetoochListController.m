@@ -267,6 +267,11 @@
             return ;
         }
         
+        if ([value hasPrefix:@"ff"]) {
+            
+            return;
+        }
+        
         // 温度值
         [[NSNotificationCenter defaultCenter] postNotificationName:TemperatureValue object:value];
         
