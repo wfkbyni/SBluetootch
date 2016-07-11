@@ -527,7 +527,7 @@ characteristic:(CBCharacteristic *)characteristic
             
             double interval = ABS((double)[obj.timeInterval longLongValue] / 1000);
             NSLog(@"%@    interval:%.2f",[obj toJSONString],interval);
-            sleep(1);
+            [NSThread sleepForTimeInterval:interval];
             
             CBCharacteristic *currCharacteristic = [BabyToy findCharacteristicFormServices:self.allServers UUIDString:WriteDateUUID];
             
