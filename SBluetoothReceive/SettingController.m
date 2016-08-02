@@ -67,7 +67,7 @@
     
     titleArray = @[@[@"连接设备",@"震动消息接收方式"],@[@"个人信息", @"修改密码",@"妄想商城",@"关于我们"]];
     
-    controllerArray = @[@[@"BluetoochListController",@""],@[@"UserInfoController",@"UpdatePwdController",@"ShopController",@"UpdateInfoController"]];//AboutController
+    controllerArray = @[@[@"BluetoochListController",@""],@[@"RecordViewController",@"UpdatePwdController",@"ShopController",@"UpdateInfoController"]];//AboutController
     
     [self.myTableView reloadData];
 }
